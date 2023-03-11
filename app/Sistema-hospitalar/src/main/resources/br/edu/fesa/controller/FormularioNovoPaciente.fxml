@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="679.0" prefWidth="1104.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fesa.controller.FormularioNovoPacienteController">
+   <children>
+      <Pane layoutY="-1.0" prefHeight="70.0" prefWidth="1104.0" style="-fx-background-color: #6b9ac4;">
+         <children>
+            <Button fx:id="btnCriarPaciente1" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" onMouseClicked="#voltarTela" style="-fx-background-color: #4059ad;" text="Voltar" textFill="#fcfcfc">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <TextField fx:id="txtNome" layoutX="75.0" layoutY="197.0" prefHeight="31.0" prefWidth="525.0" promptText="Nome" />
+      <TextField fx:id="txtCpf" layoutX="711.0" layoutY="197.0" prefHeight="31.0" prefWidth="230.0" promptText="CPF" />
+      <DatePicker fx:id="dpDataNasc" layoutX="120.0" layoutY="293.0" promptText="Data de nascimento" />
+      <TextField fx:id="txtCep" layoutX="184.0" layoutY="388.0" promptText="CEP" />
+      <TextField fx:id="txtEndereco" layoutX="439.0" layoutY="388.0" prefHeight="31.0" prefWidth="281.0" promptText="Endereço" />
+      <TextField fx:id="txtNumero" layoutX="786.0" layoutY="388.0" prefHeight="31.0" prefWidth="112.0" promptText="Numero " />
+      <TextField fx:id="txtTelefone" layoutX="446.0" layoutY="293.0" promptText="Telefone" />
+      <Label layoutX="75.0" layoutY="168.0" text="Nome" />
+      <Label layoutX="711.0" layoutY="168.0" text="CPF" />
+      <Label layoutX="121.0" layoutY="265.0" text="Data de nascimento" />
+      <Label layoutX="446.0" layoutY="265.0" text="Telefone" />
+      <Label layoutX="751.0" layoutY="265.0" text="Convenio" />
+      <Label layoutX="187.0" layoutY="360.0" text="CEP" />
+      <Label layoutX="439.0" layoutY="360.0" text="Endereço" />
+      <Label layoutX="786.0" layoutY="360.0" text="Numero" />
+      <Label layoutX="397.0" layoutY="106.0" text="Formulário novo pacientes">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCriarPaciente" layoutX="485.0" layoutY="516.0" mnemonicParsing="false" onMouseClicked="#criarPaciente" style="-fx-background-color: #4059ad;" text="Criar paciente" textFill="#fcfcfc">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="cbConvenio" layoutX="751.0" layoutY="293.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

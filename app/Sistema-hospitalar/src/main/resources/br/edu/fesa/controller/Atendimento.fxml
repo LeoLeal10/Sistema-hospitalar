@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="537.0" prefWidth="765.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fesa.controller.AtendimentoController">
+   <children>
+      <Pane layoutY="-4.0" onMouseClicked="#confirmarSaida" prefHeight="67.0" prefWidth="965.0" style="-fx-background-color: #6b9ac4;">
+         <children>
+            <Button fx:id="btnSair" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#confirmarSaida" style="-fx-background-color: #4059ad;" text="Sair" textFill="#fcfcfc">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <TextField fx:id="txtBusca" layoutX="52.0" layoutY="109.0" prefHeight="31.0" prefWidth="501.0" promptText="Digite o Nome ou CPF" />
+      <Button fx:id="btnNovoPaciente" layoutX="53.0" layoutY="459.0" mnemonicParsing="false" onMouseClicked="#novoPaciente" prefHeight="31.0" prefWidth="131.0" style="-fx-background-color: #4059ad;" text="Novo paciente" textFill="WHITE" />
+      <TableView fx:id="tbPacientes" layoutX="53.0" layoutY="169.0" prefHeight="279.0" prefWidth="754.0">
+        <columns>
+          <TableColumn fx:id="clId" prefWidth="54.0" text="ID" />
+          <TableColumn fx:id="clNome" prefWidth="291.0" text="Nome" />
+            <TableColumn fx:id="clDataNasc" prefWidth="127.0" text="Data de Nascimento" />
+            <TableColumn fx:id="clCpf" prefWidth="136.0" text="CPF" />
+            <TableColumn fx:id="clIdConvenio" prefWidth="145.0" text="Convenio" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnDeletar" layoutX="390.0" layoutY="459.0" mnemonicParsing="false" onMouseClicked="#confirmarRemover" prefHeight="31.0" prefWidth="131.0" style="-fx-background-color: #4059ad;" text="Deletar" textFill="WHITE" />
+      <Button fx:id="btnEditar" layoutX="222.0" layoutY="459.0" mnemonicParsing="false" onMouseClicked="#editarPaciente" prefHeight="31.0" prefWidth="131.0" style="-fx-background-color: #4059ad;" text="Editar" textFill="WHITE" />
+      <Button fx:id="btnCriarFichaMedica" layoutX="551.0" layoutY="459.0" mnemonicParsing="false" onMouseClicked="#criarFicharMedica" prefHeight="31.0" prefWidth="131.0" style="-fx-background-color: #4059ad;" text="Criar ficha médica" textFill="WHITE" />
+      <Button fx:id="btnCarregar" layoutX="570.0" layoutY="109.0" mnemonicParsing="false" onMouseClicked="#carregaPacientes" prefHeight="31.0" prefWidth="112.0" style="-fx-background-color: #4059ad;" text="Atualizar" textFill="WHITE" />
+   </children>
+</AnchorPane>

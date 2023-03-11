@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="643.0" prefWidth="1149.0" style="-fx-background-color: #eff2f1; -fx-border-color: #00000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.fesa.controller.AdministradorController">
+   <children>
+      <BorderPane fx:id="bpClassificacao" layoutX="654.0" layoutY="322.0" prefHeight="302.0" prefWidth="474.0" />
+      <Pane prefHeight="67.0" prefWidth="1159.0" style="-fx-background-color: #6b9ac4;">
+         <children>
+            <Button fx:id="btnSair" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#confirmarSaida" style="-fx-background-color: #4059ad;" text="Sair" textFill="#fcfcfc">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnListaFunc" layoutX="960.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#listarFuncionarios" style="-fx-background-color: #f4b942;" text="Listar funcionarios" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Region layoutX="213.0" layoutY="173.0" prefHeight="99.0" prefWidth="310.0" style="-fx-background-color: #ffffff; -fx-border-radius: 7px;" />
+      <Label layoutX="272.0" layoutY="185.0" text="Pessoas atendidas no mês">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+      </Label>
+      <Region layoutX="637.0" layoutY="173.0" prefHeight="99.0" prefWidth="310.0" style="-fx-background-color: #ffffff;" />
+      <Label layoutX="717.0" layoutY="185.0" text="Pacientes em espera">
+         <font>
+            <Font name="Bodoni MT" size="18.0" />
+         </font>
+      </Label>
+      <Separator layoutX="212.0" layoutY="205.0" prefHeight="3.0" prefWidth="310.0" />
+      <Separator layoutX="637.0" layoutY="196.0" prefHeight="18.0" prefWidth="310.0" />
+      <Label fx:id="lbQtdAtendidas" layoutX="356.0" layoutY="214.0" text="0">
+         <font>
+            <Font name="Bodoni MT" size="44.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbQtdEspera" layoutX="781.0" layoutY="214.0" text="0">
+         <font>
+            <Font name="Bodoni MT" size="44.0" />
+         </font>
+      </Label>
+      <BorderPane fx:id="bpAtendimentoSemana" layoutX="96.0" layoutY="322.0" prefHeight="302.0" prefWidth="474.0" />
+   </children>
+</AnchorPane>
